@@ -231,11 +231,12 @@ colorPicker.addEventListener("input", (event) => {
 rainbowButton.addEventListener("click", () => {
     if (rainbowMode) {
         rainbowMode = false;
-        console.log(rainbowMode)
+        colorPicker.classList.remove("rainbow-mode-style");
+        currentColorValue = '#ffffff';
+        updateColorPicker(currentColorValue);
     }
-
     else {
         rainbowMode = true;
-        console.log(rainbowMode)
+        colorPicker.classList.add("rainbow-mode-style");
     }
 })
