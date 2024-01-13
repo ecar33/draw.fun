@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>draw.fun</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="header-container"></div>
+    <div class="header-container">
+        <header class="header">draw.fun</header>
+    </div>
+    <div class="main-layout"></div>
     <div class="main-content-container">
         <div class="grid-container"></div>
-        <div class="color-choices-container">
-            <div class="color-choice-row">
-                <div class="color-choice color-red"></div>
-                <div class="color-choice color-redOrange"></div>
-                <div class="color-choice color-orange"></div>
-                <div class="color-choice color-yellowOrange"></div>
-                <div class="color-choice color-yellow"></div>
-                <div class="color-choice color-yellowGreen"></div>
+        <div class="sliders-container">
+            <div class="dimension-slider-container">
+                <p> Dimensions: </p>
+                <input class="dimension-slider" type="range" step="8" min="8" max="64" value="32">
+                <p id="dimension-text">32 x 32</p>
             </div>
-            <div class="color-choice-row">
-                <div class="color-choice color-green"></div>
-                <div class="color-choice color-blueGreen"></div>
-                <div class="color-choice color-blue"></div>
-                <div class="color-choice color-blueViolet"></div>
-                <div class="color-choice color-violet"></div>
-                <div class="color-choice color-redViolet"></div>
-            </div>
+            <button class="rainbow-button">Rainbow Mode</button>
+        </div>
+        <div class="toolbar">
+            <p>Color:</p>
+            <input id="color-picker" type="color" value="#ffffff">
+            <div class="color-choices-container">
+                <div class="color-choice-row">
+                    <div class="color-choice color-red"></div>
+                    <div class="color-choice color-redOrange"></div>
+                    <div class="color-choice color-orange"></div>
+                    <div class="color-choice color-yellowOrange"></div>
+                    <div class="color-choice color-yellow"></div>
+                    <div class="color-choice color-yellowGreen"></div>
+                    <div class="color-choice color-white"></div>
+                </div>
+                <div class="color-choice-row">
+                    <div class="color-choice color-green"></div>
+                    <div class="color-choice color-blueGreen"></div>
+                    <div class="color-choice color-blue"></div>
+                    <div class="color-choice color-blueViolet"></div>
+                    <div class="color-choice color-violet"></div>
+                    <div class="color-choice color-redViolet"></div>
+                    <div class="color-choice color-black"></div>
+                </div>
+            </div> <button class="reset-button">Reset</button>
         </div>
     </div>
-    <div class="footer"></div>
+    <footer class="footer">github.com/ecar33</footer>
 </body>
+
 </html>
