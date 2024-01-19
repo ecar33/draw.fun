@@ -50,7 +50,7 @@ p {
 }
 
 .grid-container {
-    width: 1000px;
+    width: 70vh;
     aspect-ratio: 1;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 350px;
+    width: 30vh;
 }
 
 
