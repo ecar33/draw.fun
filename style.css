@@ -50,7 +50,7 @@ p {
 }
 
 .grid-container {
-    width: 70vh;
+    flex-basis: 55vh;
     aspect-ratio: 1;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ p {
 
 
 .sliders-container {
-    width: 80vh;
+    width: 50vh;
     display: flex;
     gap: 10%;
     justify-content: center;
@@ -72,7 +72,7 @@ p {
     justify-content: center;
     height: 20px;
     padding: 10px;
-    width: 20%;
+    flex-basis: 20%;
 }
 
 #dimension-text {
@@ -109,9 +109,16 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 30vh;
+    width: 50vh;
+    justify-content: center;
 }
 
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
 
 #color-picker {
     flex-grow: 0;
@@ -173,6 +180,7 @@ input::-webkit-color-swatch {
     font-weight: bold;
     height: 30px;
     align-self: center;
+    flex-shrink: 0;
 }
 
 #color-picker.rainbow-mode-style {
@@ -196,11 +204,7 @@ input::-webkit-color-swatch {
 }
 
 .reset-button {
-    background-image: linear-gradient(0deg,
-            hsl(0deg 0% 0%) 0%,
-            hsl(239deg 10% 17%) 33%,
-            hsl(239deg 10% 17%) 67%,
-            hsl(0deg 0% 0%) 100%);
+    background-color: rgba(26, 26, 26, 0.137);
     color: white;
     height: 20px;
     align-self: center;
